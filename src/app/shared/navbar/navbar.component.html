@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" [routerLink]="['/accueil']">Accueil</a>
+            <a class="navbar-brand" [routerLink]="['/configuration']">Configurations</a>
+            <a class="navbar-brand" [routerLink]="['/processeur']">Processeurs</a>
+            <a class="navbar-brand" [routerLink]="['/ecran']">Ecrans</a>
+            <a class="navbar-brand" [routerLink]="['/casques']">Casques</a>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Rejoignez nous sur Discord" data-placement="bottom" href="https://discord.com/invite/3A9t2YYNg3" target="_blank">
+                        <a><img style="width:3em;" src="./assets/img/discord-logo.png"/></a>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
